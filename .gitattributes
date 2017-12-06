@@ -1,17 +1,23 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Force Unix line endings for most file formats (except binary files)
+*.js         text eol=lf
+*.jsm        text eol=lf
+*.css        text eol=lf
+*.html       text eol=lf
+*.md         text eol=lf
+*.properties text eol=lf
+*.yml        text eol=lf
+*.json       text eol=lf
+*.config     text eol=lf
+*.inc        text eol=lf
+*.manifest   text eol=lf
+*.rdf        text eol=lf
+*.jade       text eol=lf
+*.coffee     text eol=lf
 
-# Custom for Visual Studio
-*.cs     diff=csharp
+# PDF files shall not modify CRLF line endings
+*.pdf -crlf
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+# Linguist language overrides
+*.js linguist-language=JavaScript
+*.jsm linguist-language=JavaScript
+*.inc linguist-language=XML
